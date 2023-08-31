@@ -18,9 +18,9 @@ import (
 
 var (
 	appVersion = "v1.1.0"
-	chainIDMap = map[string]int{"frenchain": 69420, "ropsten": 3, "rinkeby": 4, "goerli": 5, "kovan": 42}
+	chainIDMap = map[string]int{"frenchain": 69420, "neronet": 888888, "crystaleum": 888888, "ropsten": 3, "rinkeby": 4, "goerli": 5, "kovan": 42}
 
-	httpPortFlag = flag.Int("httpport", 8080, "Listener port to serve HTTP connection")
+	httpPortFlag = flag.Int("httpport", 8081, "Listener port to serve HTTP connection")
 	proxyCntFlag = flag.Int("proxycount", 0, "Count of reverse proxies in front of the server")
 	queueCapFlag = flag.Int("queuecap", 100, "Maximum transactions waiting to be sent")
 	versionFlag  = flag.Bool("version", false, "Print version number")
