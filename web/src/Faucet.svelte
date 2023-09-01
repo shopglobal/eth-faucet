@@ -4,15 +4,15 @@
   import { formatEther } from '@ethersproject/units';
   import { setDefaults as setToast, toast } from 'bulma-toast';
   
-  let distribution = 0.5;
+  let distribution = 1.0;
   let address = null;
   let faucetInfo = {
     account: '0x0000000000000000000000000000000000000000',
     network: 'testnet',
-    payout: 0.5
+    payout: 1.0
   };
 
-  $: document.title = `tFREN ${capitalize(faucetInfo.network)} Faucet`;
+  $: document.title = `Testnet X Faucet`;
 
   onMount(async () => {
     const res = await fetch('/api/info');
@@ -71,7 +71,7 @@
               <span class="navbar-item">
                 <a
                   class="button is-white is-outlined"
-                  href="https://github.com/frenchaindev/frenchain-faucet"
+                  href="https://github.com/shopglobal/eth-faucet"
                 >
                   <span class="icon">
                     <i class="fa fa-github" />
@@ -89,9 +89,9 @@
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <h1 class="title">
-            Receive {distribution} tFREN per request
+            Receive {distribution} X per request
           </h1>
-          <img alt="FrenChain" src="https://frenchain.app/wp-content/uploads/2021/07/Asset-7@2x.png" width="33%" height="33%" />
+          <img alt="FrenChain" src="https://electronero.org/assets/images/logo/sticker.webp" width="33%" height="33%" />
           <h2 class="subtitle">
             Serving from {faucetInfo.account}
           </h2>
