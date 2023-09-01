@@ -4,12 +4,12 @@
   import { formatEther } from '@ethersproject/units';
   import { setDefaults as setToast, toast } from 'bulma-toast';
   
-  let distribution = 1.0;
+  let distribution = 25.0;
   let address = null;
   let faucetInfo = {
     account: '0x0000000000000000000000000000000000000000',
     network: 'testnet',
-    payout: 1.0
+    payout: 25.0
   };
 
   $: document.title = `Testnet X Faucet`;
