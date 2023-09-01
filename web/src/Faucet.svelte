@@ -63,7 +63,7 @@
               <span class="icon">
                 <i class="fa fa-bath" />
               </span>
-              <span><b>tFREN (frentest) Faucet</b></span>
+              <span><b>Go-Electronero "Crystaleum" X Faucet</b></span>
             </a>
           </div>
           <div id="navbarMenu" class="navbar-menu">
